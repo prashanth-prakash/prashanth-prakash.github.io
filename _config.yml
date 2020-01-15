@@ -3,30 +3,30 @@ repository: sproogen/resume-theme
 favicon: images/favicon.ico
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: Prashanth Prakash
+title: Researcher
+email: prashanth.rp94@gmail.com
+#website: www.github.com/sproogen/resume-theme======
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
+#twitter_username: facespics
+github_username:  prashanth-prakash
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-instagram_username: chillwildlife
-linkedin_username: jameswgrant
+#instagram_username: chillwildlife
+linkedin_username: prashanth.rp94
 # pinterest_username: jekyll
-youtube_username: globalmtb
+#youtube_username: globalmtb
 # googleplus_username: +jekyll
 
 # About Section
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+  Hi, my name is Prashanth and I'm a reseaerch technologist at Northwestern University. As part of my research I have worked on signal processing and machine learning algorithms for brain computer interfaces and neuroscience. My interests have been in learning representations in the brain and building decoders that help in translating neural signals to behavior.
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  I am most skilled in:<mar>Machine learning - Deep learning</mark><mark>Signal processing</mark> <mark>Python</mark> and <mark>MATLAB<mark>
 
 # Projects Section
 # projects_title: Projects
