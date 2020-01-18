@@ -7,3 +7,12 @@
       Conducting R01 study for stroke affected patients with upper limb paralysis using Myoelectric signals. Leading a pilot study that combines MCI with a sleep component to compliment rehabilitation.
     - Decoding produced speech using ECoG signals:
       Designing methods to build speech decoder for patients with aphasia. Investigating deep learning methods to decode intended speech.
+- layout: left
+  company: Kording Lab
+  job_title: Graduate Research assistsnt
+  dates: Feb 2018 - May 2019
+  description: | # this will include new lines to allow paragraphs
+    - Ensemble learning for classification of brain signals
+      Applied feature engineering and ensemble classification techniques on EEG signals to decode imagined motor intent. Achieved significant accuracy using ensemble classification techniques like XGBoost and Random Forest. Sought deep learning solutions for better feature extraction.
+    - Biologically plausible neural networks
+      Helped design an algorithm to address the weight transport problem in neural networks. Successfully tested algorithm in a variety of neural network architectures. Extensively experimented with deep learning architectures using Tensorflow to address this problem. Further working on using causal nature between spiking activity of neurons and reward to hypothesize a biologically plausible gradient update.
