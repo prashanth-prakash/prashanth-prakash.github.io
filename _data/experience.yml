@@ -12,7 +12,7 @@
   job_title: Graduate Research assistsnt
   dates: Feb 2018 - May 2019
   description: | # this will include new lines to allow paragraphs
-    - Ensemble learning for classification of brain signals:
-      Applied feature engineering and ensemble classification techniques on EEG signals to decode imagined motor intent. Achieved significant accuracy using ensemble classification techniques like XGBoost and Random Forest. Sought deep learning solutions for better feature extraction.
-    - Biologically plausible neural networks:
-      Helped design an algorithm to address the weight transport problem in neural networks. Successfully tested algorithm in a variety of neural network architectures. Extensively experimented with deep learning architectures using Tensorflow to address this problem. Further working on using causal nature between spiking activity of neurons and reward to hypothesize a biologically plausible gradient update.
+     - Ensemble learning for classification of brain signals
+        Applied feature engineering, signal processing and machine learning techniques on EEG signals to decode motor imagination. Achieved significant accuracy using ensemble classification techniques like XGBoost and Random Forest
+     - Computational models of Biologically plausible neural networks
+       Helped design an algorithm to address the weight transport problem in neural networks. Successfully tested algorithm in a variety of neural network architectures. Extensively experimented with deep learning architectures using Tensorflow to address this problem.
