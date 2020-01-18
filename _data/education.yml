@@ -5,9 +5,10 @@
   description: | # this will include new lines to allow paragraphs
     During my Masters, I actively sought coursework and projects in the field of machine learning, systems engineering and neuroscience. In addition to coursework, I sought research to explore learning representations in the brain. I also pursued a thesis that explored ensemble learning paradigms for brain machine interfaces. 
   
-  name: University of Pennsylvania
-  dates: 2017 - 2019
-  qualification: Msc - Electrical Engineering
-  description: | # this will include new lines to allow paragraphs
-    During my Masters, I actively sought coursework and projects in the field of machine learning, systems engineering and neuroscience. In addition to coursework, I sought research to explore learning representations in the brain. I also pursued a thesis that explored ensemble learning paradigms for brain machine interfaces. 
+  - layout: left
+    name: University of Pennsylvania
+    dates: 2017 - 2019
+    qualification: Msc - Electrical Engineering
+    description: | # this will include new lines to allow paragraphs
+      During my Masters, I actively sought coursework and projects in the field of machine learning, systems engineering and neuroscience. In addition to coursework, I sought research to explore learning representations in the brain. I also pursued a thesis that explored ensemble learning paradigms for brain machine interfaces. 
   
