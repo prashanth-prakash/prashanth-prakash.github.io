@@ -3,9 +3,7 @@
   job_title: Research technologist
   dates: July 2019 - Present
   description: | # this will include new lines to allow paragraphs
-    - Myoelectric computer interface for stroke affected patients
-      >- Conducting R01 study for stroke affected patients with upper limb paralysis using Myoelectric signals. Leading a pilot study that combines MCI with a sleep component to compliment rehabilitation.
-    - EMG artifact removal for decoding force from high gamma EEG signals
-      >- Designing algorithm to separate EMG artifact from high gamma EEG signals to decode force for patients with hemicraniectomies due to TBI. Training a variety of classifiers on simulated independent components.
-    - Decoding produced speech using ECoG signals
-      >- Designing methods to build speech decoder for patients with aphasia. Investigating deep learning methods to decode intended speech.
+    - Myoelectric computer interface for stroke affected patients \n
+      Conducting R01 study for stroke affected patients with upper limb paralysis using Myoelectric signals. Leading a pilot study that combines MCI with a sleep component to compliment rehabilitation.
+    - Decoding produced speech using ECoG signals \n
+      Designing methods to build speech decoder for patients with aphasia. Investigating deep learning methods to decode intended speech.
