@@ -1,8 +1,28 @@
-- layout: top-middle
-  name: Project name
-  link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-  github: Github page for project (eg. sproogen/modern-resume-theme)(optional)
-  quote: >
-    Short overview of the project (optional)
+- layout: left
+  name: Book recommendations
+#  link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+ # github: Github page for project (eg. sproogen/modern-resume-theme)(optional)
+  #quote: >
+   # Short overview of the project (optional)
   description: | # this will include new lines to allow paragraphs
-    Description about the work on/with the project
+    Analyzed conventional and deep learning algorithms for recommending books to different users based on their rating for some books in the database. Applied Clustering techniques to identify similar users according to their ratings.
+    
+- layout: left
+  name: Sentiment Analysis on twitter dataset
+#  link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+ # github: Github page for project (eg. sproogen/modern-resume-theme)(optional)
+  #quote: >
+   # Short overview of the project (optional)
+  description: | # this will include new lines to allow paragraphs
+    Identified the sentiment of tweets denoted as +1 for happy and -1 for sad. This involved preprocessing the tweets to remove certain stop words and characters. Further, apply feature engineering techniques to represent the data appropriately for classification.
+    
+- layout: left
+  name: Identification of spam email
+#  link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+ # github: Github page for project (eg. sproogen/modern-resume-theme)(optional)
+  #quote: >
+   # Short overview of the project (optional)
+  description: | # this will include new lines to allow paragraphs
+    Built a classifier to identify email that might be spam. This involved first training on data that was already labelled as spam/not spam. Observed how changing certain parameters in the classifier affect the accuracy. Performed extensive search for hyper-parameter optimization.
+    
+   
