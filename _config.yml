@@ -24,10 +24,7 @@ linkedin_username: prashanthrp
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name is Prashanth and I'm a reseaerch technologist at Northwestern University. As part of my research I have worked on signal processing and machine learning algorithms for brain computer interfaces and neuroscience. My interests have been in learning representations in the brain and building decoders that help in translating neural signals to behavior.
-
-  I am most skilled in:<mark>Machine learning - Deep learning</mark> <mark>Signal processing</mark> <mark>Python</mark> and <mark>MATLAB<mark>
-
+  Hi, my name is Prashanth and I'm a reseaerch technologist at Northwestern University. As part of my research I have worked on signal processing and machine learning algorithms for brain computer interfaces and neuroscience. My interests have been in learning representations in the brain and building decoders that help in translating neural signals to behavior. In addition to my interest in neuroscience, I am always on the lookout for new and interesting projects to work on. I am open to collaborating, feel free to contact me via email or linkedin. 
 
 # Projects Section
 # projects_title: Projects
@@ -43,7 +40,11 @@ more_title: Publications
 more_content: | # this will include new lines to allow paragraphs
   - Purushothaman G, Prakash PR, Kothari S (2018) Investigation of multiple frequency recognition from single-channel steady-state visual evoked potential for efficient brain–computer interfaces application. IET signal processing journal [Available here](https://ieeexplore.ieee.org/document/8352530)
   - Lansdell, B.J., Prakash, P.R., and Kording, K.P. (2019). Learning to solve the credit assignment problem. Presented at Neural Information processing Systems 2019. [Available here](https://arxiv.org/pdf/1906.00889.pdf) 
-
+more_title: Skills 
+more_content: |
+  - Programming languages: Python,SQL, MATLAB, C++
+  - Tools: Numpy, NLTK, Tensorflow, Keras, Pandas, sklearn, scipy
+  - Technical: Machine learning, Deep learning, Data cleaning, Data Analysis
 # Footer
 footer_show_references: true
 
