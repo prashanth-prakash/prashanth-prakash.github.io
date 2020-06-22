@@ -24,7 +24,7 @@ linkedin_username: prashanthrp
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name is Prashanth and I'm a reseaerch technologist at Northwestern University. As part of my research I have worked on signal processing and machine learning algorithms for brain computer interfaces and neuroscience. My interests have been in learning representations in the brain and building decoders that help in translating neural signals to behavior. In addition to my interest in neuroscience, I am always on the lookout for interesting projects to work on. I am currently intersted in exploring machine learning tools used on healthcare data and am open to collaborating on projects, feel free to contact me via email or linkedin. 
+  I'm a reseaerch technologist at Northwestern University. As part of my research I have worked on signal processing and machine learning algorithms for brain computer interfaces and neuroscience. My interests have been in learning representations in the brain and building decoders that help in translating neural signals to behavior. In addition to my interest in neuroscience, I am always on the lookout for interesting projects to work on. I am currently intersted in exploring machine learning tools used on healthcare data and am open to collaborating on projects, feel free to contact me via email or linkedin. 
 
 # Projects Section
 # projects_title: Projects
