@@ -23,7 +23,7 @@ repository               : "prashanth-prakash/prashanth-prakash.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "images/profile.png"
   name             : "Prashanth Prakash"
   pronouns         : # example: "she/her"  
   bio              : "PhD candidate in biomedical engineering studying the neural representation of speech and language using human cortical recordings and machine learning"
