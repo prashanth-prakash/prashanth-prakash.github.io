@@ -31,11 +31,19 @@ for entry in bib_database.entries:
 
     filename = f"{year}-{slugify(title)[:50]}.md"
     path = OUT_DIR / filename
+    entry_type = entry.get("ENTRYTYPE", "")
 
+    if entry_type == "article":
+        category = "manuscripts"
+    elif entry_type == "inproceedings":
+        category = "conferences"
+    else:
+        category = "manuscripts"
     front_matter = f"""---
 title: "{title}"
 venue: "{venue}"
 date: {date}
+category: {category}
 paperurl: "{url}"
 excerpt: ""
 ---
