@@ -65,11 +65,56 @@ Work Experience
 
 Publications
 ======
-<ul>
-{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
+
+<style>
+.pub-card {
+  background: #f8f9fa;
+  border-left: 4px solid #1f77b4;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 4px;
+}
+.pub-card.first-author {
+  border-left-color: #d62728;
+  background: #fff5f5;
+  font-weight: 500;
+}
+.pub-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.pub-venue {
+  font-style: italic;
+  color: #666;
+}
+.pub-year {
+  font-size: 0.9em;
+  color: #999;
+}
+</style>
+
+{% assign first_author_pubs = site.publications | where: "category", "manuscripts" | where: "first_author", true | reverse %}
+{% assign other_pubs = site.publications | where: "category", "manuscripts" | reverse %}
+
+**First-Author Publications**
+{% for post in first_author_pubs %}
+<div class="pub-card first-author">
+  <div class="pub-title">{{ post.title }}</div>
+  <div class="pub-venue">{{ post.venue }}</div>
+  <div class="pub-year">{{ post.date | date: "%Y" }}</div>
+</div>
 {% endfor %}
-</ul>
+
+**Other Publications**
+{% for post in other_pubs %}
+  {% if post.first_author != true %}
+  <div class="pub-card">
+    <div class="pub-title">{{ post.title }}</div>
+    <div class="pub-venue">{{ post.venue }}</div>
+    <div class="pub-year">{{ post.date | date: "%Y" }}</div>
+  </div>
+  {% endif %}
+{% endfor %}
 
 ---
 
@@ -78,16 +123,6 @@ Talks
 <ul>
 {% for post in site.talks reversed %}
   {% include archive-single-talk-cv.html %}
-{% endfor %}
-</ul>
-
----
-
-Teaching
-======
-<ul>
-{% for post in site.teaching reversed %}
-  {% include archive-single-cv.html %}
 {% endfor %}
 </ul>
 
@@ -113,7 +148,81 @@ Honors and Awards
 
 Technical Skills
 ======
-* **Languages:** Python, SQL, C++, MATLAB
-* **Python:** Scikit-Learn, XGBoost, PyTorch, TensorFlow, Keras, Pandas, sklearn, scipy, OpenCV, Simple-ITK, nibabel, NLTK, pygame, MistralAI, Hugging Face
-* **Data Visualization Tools:** Matplotlib, Ggplot, Seaborn, Plotly
-* **Other Technical Skills:** Linux, LabStreamingLayer, Git, BCI2000
+
+<style>
+.skill-category {
+  margin-bottom: 18px;
+}
+.skill-category-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+.skill-badge {
+  display: inline-block;
+  background: #1f77b4;
+  color: white;
+  padding: 6px 12px;
+  margin: 4px 6px 4px 0;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.skill-badge.ml {
+  background: #ff7f0e;
+}
+.skill-badge.viz {
+  background: #2ca02c;
+}
+.skill-badge.other {
+  background: #9467bd;
+}
+</style>
+
+<div class="skill-category">
+  <div class="skill-category-title">Languages</div>
+  <span class="skill-badge">Python</span>
+  <span class="skill-badge">SQL</span>
+  <span class="skill-badge">C++</span>
+  <span class="skill-badge">MATLAB</span>
+</div>
+
+<div class="skill-category">
+  <div class="skill-category-title">Machine Learning & Deep Learning</div>
+  <span class="skill-badge ml">PyTorch</span>
+  <span class="skill-badge ml">TensorFlow</span>
+  <span class="skill-badge ml">Scikit-Learn</span>
+  <span class="skill-badge ml">XGBoost</span>
+  <span class="skill-badge ml">Keras</span>
+  <span class="skill-badge ml">Hugging Face</span>
+  <span class="skill-badge ml">MistralAI</span>
+</div>
+
+<div class="skill-category">
+  <div class="skill-category-title">Data Processing & Analysis</div>
+  <span class="skill-badge">Pandas</span>
+  <span class="skill-badge">NumPy</span>
+  <span class="skill-badge">SciPy</span>
+  <span class="skill-badge">OpenCV</span>
+  <span class="skill-badge">SimpleITK</span>
+  <span class="skill-badge">nibabel</span>
+  <span class="skill-badge">NLTK</span>
+</div>
+
+<div class="skill-category">
+  <div class="skill-category-title">Visualization</div>
+  <span class="skill-badge viz">Matplotlib</span>
+  <span class="skill-badge viz">Seaborn</span>
+  <span class="skill-badge viz">Plotly</span>
+  <span class="skill-badge viz">Ggplot</span>
+</div>
+
+<div class="skill-category">
+  <div class="skill-category-title">Specialized Tools</div>
+  <span class="skill-badge other">LabStreamingLayer</span>
+  <span class="skill-badge other">BCI2000</span>
+  <span class="skill-badge other">Linux</span>
+  <span class="skill-badge other">Git</span>
+  <span class="skill-badge other">MLFlow</span>
+  <span class="skill-badge other">SLURM</span>
+</div>
