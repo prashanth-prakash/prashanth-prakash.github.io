@@ -67,90 +67,44 @@ Publications
 ======
 
 <style>
-.pub-card {
-  background: #f8f9fa;
-  border-left: 4px solid #1f77b4;
-  padding: 15px;
-  margin: 12px 0;
-  border-radius: 4px;
-  transition: all 0.2s ease;
-  text-decoration: none;
-  display: block;
-  color: inherit;
+.first-author-pub .archive__item-title a::before {
+  content: "★ ";
+  color: #d62728;
 }
-
-@media (prefers-color-scheme: dark) {
-  .pub-card {
-    background: #2a2a2a;
-    color: #e0e0e0;
-    border-left-color: #5a9fd4;
-  }
-  .pub-card.first-author {
-    background: #3a2a2a;
-    border-left-color: #ff6b6b;
-  }
-  .pub-venue {
-    color: #b0b0b0 !important;
-  }
-  .pub-year {
-    color: #808080 !important;
-  }
+html[data-theme="dark"] .first-author-pub .archive__item-title a::before {
+  color: #ff6b6b;
 }
-
-.pub-card:hover {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.first-author-pub {
+  border-left: 3px solid #d62728;
+  padding-left: 10px;
+  margin-bottom: 8px;
 }
-
-@media (prefers-color-scheme: dark) {
-  .pub-card:hover {
-    box-shadow: 0 2px 8px rgba(255,255,255,0.1);
-  }
-}
-
-.pub-card.first-author {
-  border-left-color: #d62728;
-  background: #fff5f5;
-  font-weight: 500;
-}
-
-.pub-title {
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.pub-venue {
-  font-style: italic;
-  color: #666;
-}
-
-.pub-year {
-  font-size: 0.9em;
-  color: #999;
+html[data-theme="dark"] .first-author-pub {
+  border-left-color: #ff6b6b;
 }
 </style>
 
-{% assign first_author_pubs = site.publications | where: "first_author", true | reverse %}
-{% assign other_pubs = site.publications | reverse %}
+**First-Author**
 
-**First-Author Publications**
-{% for post in first_author_pubs %}
-<a href="{{ post.permalink }}" class="pub-card first-author" style="text-decoration: none; color: inherit;">
-  <div class="pub-title">{{ post.title }}</div>
-  <div class="pub-venue">{{ post.venue }}</div>
-  <div class="pub-year">{{ post.date | date: "%Y" }}</div>
-</a>
-{% endfor %}
-
-**Other Publications**
-{% for post in other_pubs %}
-  {% if post.first_author != true %}
-  <a href="{{ post.permalink }}" class="pub-card" style="text-decoration: none; color: inherit;">
-    <div class="pub-title">{{ post.title }}</div>
-    <div class="pub-venue">{{ post.venue }}</div>
-    <div class="pub-year">{{ post.date | date: "%Y" }}</div>
-  </a>
+<ul>
+{% for post in site.publications reversed %}
+  {% if post.first_author == true %}
+  <div class="first-author-pub">
+    {% include archive-single-cv.html %}
+  </div>
   {% endif %}
 {% endfor %}
+</ul>
+
+**Other Publications**
+
+<ul>
+{% for post in site.publications reversed %}
+  {% if post.first_author != true %}
+    {% include archive-single-cv.html %}
+  {% endif %}
+{% endfor %}
+</ul>
 
 ---
 
@@ -195,10 +149,8 @@ Technical Skills
   color: #333;
 }
 
-@media (prefers-color-scheme: dark) {
-  .skill-category-title {
-    color: #e0e0e0;
-  }
+html[data-theme="dark"] .skill-category-title {
+  color: #eaeaea;
 }
 
 .skill-badge {
@@ -230,20 +182,10 @@ Technical Skills
   background: #9467bd;
 }
 
-@media (prefers-color-scheme: dark) {
-  .skill-badge {
-    background: #1e6fb8;
-  }
-  .skill-badge.ml {
-    background: #e67e22;
-  }
-  .skill-badge.viz {
-    background: #27ae60;
-  }
-  .skill-badge.other {
-    background: #8e44ad;
-  }
-}
+html[data-theme="dark"] .skill-badge        { background: #1e6fb8; }
+html[data-theme="dark"] .skill-badge.ml    { background: #e67e22; }
+html[data-theme="dark"] .skill-badge.viz   { background: #27ae60; }
+html[data-theme="dark"] .skill-badge.other { background: #8e44ad; }
 </style>
 
 <div class="skill-category">
